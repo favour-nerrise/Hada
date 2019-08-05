@@ -1,14 +1,35 @@
-// var execution = 0;
-//
-// $('#execution').on('click', function() {
-//   execution += 13;
-// //   $('.exec').text(execution);
-// //   var elem = document.getElementById("exe");
-// //   elem.style.width = execution + '%';
-//   $("#exec")
-//       .css("width", execution + "%")
-//       .attr("aria-valuenow", execution);
-// })
+var execution = 0;
+var community = 0;
+var integrity = 0;
+var passion = 0;
+
+$('#execution').on('click', function() {
+  execution += 13;
+  $("#exec")
+      .css("width", execution + "%")
+      .attr("aria-valuenow", execution);
+})
+
+$('#community').on('click', function() {
+  community += 13;
+  $("#exec")
+      .css("width", community + "%")
+      .attr("aria-valuenow", community);
+})
+
+$('#integrity').on('click', function() {
+  integrity += 13;
+  $("#exec")
+      .css("width", integrity + "%")
+      .attr("aria-valuenow", integrity);
+})
+
+$('#passion').on('click', function() {
+  passion += 13;
+  $("#exec")
+      .css("width", passion + "%")
+      .attr("aria-valuenow", passion);
+})
 
 core_values_data = {
   datasets : [ {
