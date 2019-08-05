@@ -3,7 +3,7 @@ window.onload = function(){
 ( function() {
 
 	// var n=$('.c').attr('id');
-    var c = 10;
+    var c = 45;
 	$('.c').text(c);
 	var timer = setInterval(function(){
 		c--;
