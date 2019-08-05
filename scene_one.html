@@ -28,6 +28,8 @@
         <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="js/timer.js"></script>
+    <script src="js/scores.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".mainmenu-area">
@@ -45,9 +47,8 @@
                         <!-- <img src="images/video-image.jpg" alt=""> -->
                         <!-- <a href="" class="popup video-button"> -->
                           <!-- <img src="images/play-button.png" alt=""> -->
-                          <video controls playsline>
-    <source src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.webm" type="video/webm">
-    <source src="https://storage.googleapis.com/webfundamentals-assets/videos/chrome.mp4" type="video/mp4">
+                          <video controls width="400" height="350">
+    <source src="videos/scene_one.mp4" type="video/mp4">
     <p>This browser does not support the video element.</p>
   </video>
 
@@ -65,21 +66,24 @@
                             <p>You wake up on a warm, Saturday morning. Play your story to find out more.</p>
                         </div>
                         <div class="space-50"></div>
-                        <a href="#price_page" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Next</a>
+                        <a id="to_choices" href="#choices" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Next</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Price-Area -->
-    <section class="section-padding price-area" id="price_page">
+    <!--Choices -->
+    <section class="section-padding Choices" id="choices">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
                     <div class="page-title text-center">
                         <h5 class="title">Make a Choice</h5>
                         <h3 class="dark-color">What Do I Want to Wear Today?</h3>
+                        <img src="https://img.icons8.com/nolan/64/000000/timer.png">
+                        <p> Quick!...<span class="c" id="count"></span>
+                      </p>
                         <div class="space-60"></div>
                     </div>
                 </div>
@@ -95,7 +99,9 @@
                         </div>
                         <div class="price-footer">
                           <br>
-                            <a href="#" class="bttn-white">Select</a>
+                          <button onclick="exec()">
+                            <a href="scene_two.html" class="bttn-white" id="execution">Select</a>
+                          </button>
                         </div>
                     </div>
                     <div class="space-30 hidden visible-xs"></div>
@@ -110,7 +116,7 @@
                         </div>
                         <div class="price-footer">
                             <br>
-                            <a href="#" class="bttn-white">Select</a>
+                            <a href="scene_two.html" class="bttn-white">Select</a>
                         </div>
                     </div>
                     <div class="space-30 hidden visible-xs"></div>
@@ -125,31 +131,35 @@
                         </div>
                         <div class="price-footer">
                             <br>
-                            <a href="#" class="bttn-white">Select</a>
+                            <a href="scene_two.html" class="bttn-white">Select</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Modal -->
+ <div class="modal fade" id="timeout" role="dialog">
+   <div class="modal-dialog">
+
+     <!-- Modal content-->
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 class="upper">Uh Oh!</h4>
+       </div>
+       <div class="modal-body">
+         <p>You ran out of time. Please move on.</p>
+       </div>
+       <div class="modal-footer">
+         <a href="scene_two.html" class="bttn-white">Next</a>
+       </div>
+     </div>
+
+   </div>
+ </div>
         </div>
     </section>
-    <!--Price-Area-End -->
+    <!--Choices-End -->
 
-
-
-        <!-- Footer-Bootom -->
-        <!-- <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-5"> -->
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            <!-- <span>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="lnr lnr-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></span> -->
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <!-- <div class="space-30 hidden visible-xs"></div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- Footer-Bootom-End -->
     </footer>
     <!-- Footer-Area-End -->
     <!--Vendor-JS-->

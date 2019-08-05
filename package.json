@@ -1,0 +1,24 @@
+{
+  "name": "hada",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chart.js": "^2.8.0",
+    "mongodb": "^3.3.0-beta2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/favour-nerrise/Hada.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/favour-nerrise/Hada/issues"
+  },
+  "homepage": "https://github.com/favour-nerrise/Hada#readme"
+}

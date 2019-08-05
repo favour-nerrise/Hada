@@ -22,7 +22,7 @@ CSS INDEX
 12. Testimonial-Area
 13. Gallery-Area
 14. Download-Area
-15. Price-Area
+15. Choices
 16. Questions-area
 17. Subscribe-Form
 18. Footer-Area
@@ -465,14 +465,37 @@ input:-webkit-autofill:focus {
 
 .dawn {
   background-image: url('images/dawn_long.jpg');
-  background-size: 100px 80px;
+  background-size: 646px 593px;
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: auto 100%;
   margin-bottom: 120px;
 }
 
-.skit_top {
+.market {
+  background-image: url('images/market.jpg');
+  background-size: 646px 560px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-bottom: 120px;
+}
+
+.outside {
+  background-image: url('images/city.jpg');
+  background-size: 646px 560px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-bottom: 120px;
+}
+
+.kitchen {
+  background-image: url('images/kitchen.jpg');
+  background-size: 646px 560px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  margin-bottom: 120px;
+}
+
+.skirt_top {
     background: url('images/skirt_top.png');
     height: 20px;
     width: 20px;
@@ -485,9 +508,9 @@ input:-webkit-autofill:focus {
     overflow: hidden;
 }
 
-/* .video-photo > img {
+.video-photo > img {
     width: 100%;
-} */
+}
 
 .video-area a.video-button {
     position: absolute;
@@ -746,7 +769,7 @@ input:-webkit-autofill:focus {
     margin-bottom: -200px;
 }
 
-/*-- 15. Price-Area --*/
+/*-- 15. Choices --*/
 
 .price-box {
     border-radius: 5px;

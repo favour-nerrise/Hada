@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Sumon Rahman">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Hada</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="shortcut icon" type="image/png" href="images/logo_1.png" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/linearicons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/timer.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".mainmenu-area">
+    <!-- Preloader-content -->
+    <div class="preloader">
+        <span><i class="lnr lnr-sun"></i></span>
+    </div>
+
+    <!-- Video-Area -->
+    <section class="video-area section-padding outside">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="video-photo">
+                        <!-- <img src="images/video-image.jpg" alt=""> -->
+                        <!-- <a href="" class="popup video-button"> -->
+                          <!-- <img src="images/play-button.png" alt=""> -->
+                          <video controls width="400" height="350">
+    <source src="videos/homemade_store.mp4" type="video/mp4">
+    <p>This browser does not support the video element.</p>
+  </video>
+
+                        <!-- </a> -->
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-5 col-md-offset-1">
+                    <div class="space-60 hidden visible-xs"></div>
+                    <div class="page-title">
+                        <h5 class="title wow fadeInUp" data-wow-delay="0.2s">Saturday, June 15th. 12pm.</h5>
+                        <div class="space-10"></div>
+                        <h3 class="dark-color wow fadeInUp" data-wow-delay="0.4s">A Phone Call...</h3>
+                        <div class="space-20"></div>
+                        <div class="desc wow fadeInUp" data-wow-delay="0.6s">
+                            <p>Right after helping, you get a phone call. Play your story to find out more.</p>
+                        </div>
+                        <div class="space-50"></div>
+                        <a id="to_choices" href="#choices" class="bttn-default wow fadeInUp" data-wow-delay="0.8s">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Choices -->
+    <section class="section-padding Choices" id="choices">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-title text-center">
+                        <h5 class="title">Make a Choice</h5>
+                        <h3 class="dark-color">Bake or Buy a Cake?</h3>
+                        <img src="https://img.icons8.com/nolan/64/000000/timer.png">
+                        <p><span class="c" id="count"></span>
+                      </p>
+                        <div class="space-60"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6" margin-left="230px;" margin-right="230px;">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                <img src="images/bake.png" alt="">
+                            </div>
+                            <h4 class="upper">Bake a Cake</h4>
+                        </div>
+                        <div class="price-footer">
+                          <br>
+                            <a href="scene_five.html" class="bttn-white">Select</a>
+                        </div>
+                    </div>
+                    <div class="space-30 hidden visible-xs"></div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="price-box">
+                        <div class="price-header">
+                            <div class="price-icon">
+                                  <img src="images/buy_cake.png" alt="">
+                            </div>
+                            <h4 class="upper">Buy a Cake</h4>
+                        </div>
+                        <div class="price-footer">
+                            <br>
+                            <a href="scene_five.html" class="bttn-white">Select</a>
+                        </div>
+                    </div>
+                    <div class="space-30 hidden visible-xs"></div>
+                </div>
+            </div>
+            <!-- Modal -->
+ <div class="modal fade" id="timeout" role="dialog">
+   <div class="modal-dialog">
+
+     <!-- Modal content-->
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+         <h4 class="upper">Uh Oh!</h4>
+       </div>
+       <div class="modal-body">
+         <p>You ran out of time. Please move on.</p>
+       </div>
+       <div class="modal-footer">
+         <a href="scene_two.html" class="bttn-white">Next</a>
+       </div>
+     </div>
+
+   </div>
+ </div>
+        </div>
+    </section>
+    <!--Choices-End -->
+    </footer>
+    <!-- Footer-Area-End -->
+    <!--Vendor-JS-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/jquery-ui.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <!--Plugin-JS-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/ajaxchimp.js"></script>
+    <script src="js/scrollUp.min.js"></script>
+    <script src="js/magnific-popup.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Main-active-JS-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
