@@ -3,33 +3,41 @@ var community = 0;
 var integrity = 0;
 var passion = 0;
 
-$('#execution').on('click', function() {
+function exec() {
+  $('#execution').on('click', function() {
   execution += 13;
   $("#exec")
       .css("width", execution + "%")
       .attr("aria-valuenow", execution);
-})
+});
+}
 
+function com() {
 $('#community').on('click', function() {
   community += 13;
   $("#exec")
       .css("width", community + "%")
       .attr("aria-valuenow", community);
-})
+});
+}
 
+function int() {
 $('#integrity').on('click', function() {
   integrity += 13;
   $("#exec")
       .css("width", integrity + "%")
       .attr("aria-valuenow", integrity);
-})
+});
+}
 
+function pas() {
 $('#passion').on('click', function() {
   passion += 13;
   $("#exec")
       .css("width", passion + "%")
       .attr("aria-valuenow", passion);
-})
+});
+}
 
 core_values_data = {
   datasets : [ {
